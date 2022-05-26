@@ -25,5 +25,5 @@ WR7DCX+
 
 # Things to talk about in presentation
 
-* Inheritance vs composition
+* Inheritance vs composition (use nav bar interface and implement it)
 * Refreshing cache?
