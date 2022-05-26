@@ -21,11 +21,6 @@ public class NavigationBar<T> {
         driver = parentDriver;
     }
     
-    public CartPage clickCartButton() {
-        driver.findElement(By.cssSelector(".mini-cart")).click();
-        return new CartPage(driver);
-    }
-
     public T setSearchText(String text) {
         driver.findElement(By.className("search-text")).sendKeys(text);
         return parentPage;
@@ -37,5 +32,10 @@ public class NavigationBar<T> {
         driver.findElement(By.className("search-button")).click();
         driver.findElement(By.className("search-button")).click();
         return new ItemPage(driver);
+    }
+
+    public CartPage clickCartBtn() {
+        driver.findElement(By.id("mini-cart")).click();
+        return new CartPage(driver);
     }
 }
