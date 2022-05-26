@@ -25,5 +25,7 @@ WR7DCX+
 
 # Things to talk about in presentation
 
-* Inheritance vs composition (use nav bar interface and implement it)
-* Refreshing cache?
+* Inheritance vs composition. All pages had a nav bar except for the cart page. Inheritance was probably a better choice here but I wanted to try implement it with composition to give it a go. David mentioned I can use both composition and inheritance so I still included a base page for future maintenance in case we want to add things to it, but it's pretty redundant at the moment.
+* Didn't have too many issues with selectors. I used IDs when there were IDs, and then class names when there weren't.
+* Cart page list of items.
+* No style guide given so I tried to follow my own style consistently.

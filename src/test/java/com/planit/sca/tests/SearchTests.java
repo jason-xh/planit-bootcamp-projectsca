@@ -11,7 +11,7 @@ public class SearchTests extends BaseTestSuite {
     @Test
     public void verifySearchSpecificItem() {
         // Type inference is not working, I believe Java's type inference
-        // does not like generics
+        // does not like generics and we use generics for the navigation bar
         String itemName = new HomePage(driver)
             .setNavBarSearchText("WR7DCX+")
             .clickNavBarSearchBtn()

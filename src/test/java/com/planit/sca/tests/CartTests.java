@@ -22,5 +22,9 @@ public class CartTests extends BaseTestSuite {
             "Bosch Spark Plug Single WR7DCX+", 
             productNamesInCart.get(0)
         );
+        assertEquals(
+            1, 
+            productNamesInCart.size()
+        );
     }
 }

@@ -7,8 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 // May need to restrict type for better type safety, if I wanna do that
-//     I'm going to have to use an interface as David mentioned if we restrict
-//     the type to the BasePage, we're not going to be able to call methods
+//     I'm going to have to use an interface as David mentioned because 
+//     if we restrict the type to the BasePage, we're not going to be able to call methods
 //     specific to the other pages
 // NOTE: perhaps inheritance may have been a better solution but
 //       I wanted to try implementing a navbar compositionally

@@ -4,8 +4,6 @@ import com.planit.sca.model.components.NavigationBar;
 
 import org.openqa.selenium.By;
 
-//import com.planit.sca.model.components.NavigationBar;
-
 import org.openqa.selenium.WebDriver;
 
 public class ItemPage extends BasePage {
@@ -21,6 +19,8 @@ public class ItemPage extends BasePage {
     }
 
     public String getItemQty() {
+        // experimented around with the selector for item quantity, this seemed to be
+        // the best way to retrieve it
         return driver.findElement(By.className("ui-spinner-input")).getAttribute("value");
     }
 
