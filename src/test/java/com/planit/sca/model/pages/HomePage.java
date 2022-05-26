@@ -17,10 +17,13 @@ public class HomePage extends BasePage {
         return this;
     }
 
-    // Search can return either a search results page, or a specific item if there
-    // was only 1 search result. How do I handle this?
-    public ItemPage clickNavBarSearchBtn() {
-        return navBar.clickSearchBtn();
+
+    public ItemPage clickNavBarSearchBtnSingle() {
+        return navBar.clickSearchBtnSingle();
+    }
+
+    public SearchResultsPage clickNavBarSearchBtnMulti() {
+        return navBar.clickSearchBtnMulti();
     }
 
 

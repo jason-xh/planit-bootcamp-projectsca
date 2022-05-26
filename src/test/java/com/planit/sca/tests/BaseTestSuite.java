@@ -17,7 +17,6 @@ public class BaseTestSuite {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
         driver.navigate().to("https://www.supercheapauto.com.au/");
-        // may need to clear cache/cookies
     }
 
     @AfterEach

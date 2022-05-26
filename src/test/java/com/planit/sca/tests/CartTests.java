@@ -9,11 +9,14 @@ import com.planit.sca.model.pages.HomePage;
 import org.junit.jupiter.api.Test;
 
 public class CartTests extends BaseTestSuite {
+
+    // NOTE: this test failed just before the clickAddToCartBtn() step once
+    // but I was unable to recreate the issue
     @Test
     public void verifyAddToCart() {
         List<String> productNamesInCart = new HomePage(driver)
             .setNavBarSearchText("WR7DCX+")
-            .clickNavBarSearchBtn()
+            .clickNavBarSearchBtnSingle()
             .clickAddToCartBtn()
             .clickNavBarCartBtn()
             .getProductNames();

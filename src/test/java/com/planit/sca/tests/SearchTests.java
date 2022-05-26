@@ -1,6 +1,7 @@
 package com.planit.sca.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.planit.sca.model.pages.HomePage;
 
@@ -14,7 +15,7 @@ public class SearchTests extends BaseTestSuite {
         // does not like generics and we use generics for the navigation bar
         String itemName = new HomePage(driver)
             .setNavBarSearchText("WR7DCX+")
-            .clickNavBarSearchBtn()
+            .clickNavBarSearchBtnSingle()
             .getItemName();
         
         assertEquals(
@@ -27,7 +28,7 @@ public class SearchTests extends BaseTestSuite {
     public void verifyIncrementOnItemPage() {
         String itemQty = new HomePage(driver)
             .setNavBarSearchText("WR7DCX+")
-            .clickNavBarSearchBtn()
+            .clickNavBarSearchBtnSingle()
             .clickIncrementItemQty()
             .getItemQty();
         
@@ -41,7 +42,7 @@ public class SearchTests extends BaseTestSuite {
     public void verifyDecrementOnItemPage() {
         String itemQty = new HomePage(driver)
             .setNavBarSearchText("WR7DCX+")
-            .clickNavBarSearchBtn()
+            .clickNavBarSearchBtnSingle()
             .clickIncrementItemQty()
             .clickIncrementItemQty()
             .clickIncrementItemQty()
@@ -52,5 +53,16 @@ public class SearchTests extends BaseTestSuite {
             "3", 
             itemQty
         );
+    }
+
+    // TODO: unfinished, getNumSearchItems returning higher value than expected
+    @Test
+    public void verifySearchMultipleItems() {
+        int numSearchItems = new HomePage(driver)
+            .setNavBarSearchText("castrol 10w-40")
+            .clickNavBarSearchBtnMulti()
+            .getNumSearchItems();
+
+        assertTrue(numSearchItems > 1);
     }
 }
