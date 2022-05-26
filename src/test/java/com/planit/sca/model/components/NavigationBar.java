@@ -1,6 +1,7 @@
 package com.planit.sca.model.components;
 
 import com.planit.sca.model.pages.CartPage;
+import com.planit.sca.model.pages.ItemPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,17 +13,26 @@ public class NavigationBar<T> {
     protected WebDriver driver;
     private T parentPage;
 
-    public NavigationBar(T page) {
+    public NavigationBar(T page, WebDriver parentDriver) {
         parentPage = page;
+        driver = parentDriver;
     }
     
     public CartPage clickCartButton() {
-        driver.findElement(By.cssSelector("mini-cart")).click();
+        driver.findElement(By.cssSelector(".mini-cart")).click();
         return new CartPage(driver);
     }
 
     public T setSearchText(String text) {
-        driver.findElement(By.className(".search-text.valid")).sendKeys(text);
+        driver.findElement(By.className("search-text")).sendKeys(text);
         return parentPage;
+    }
+
+    public ItemPage clickSearchBtn() {
+        // i'm not sure why but one click does not work
+        // it might need a sleep, but this is faster
+        driver.findElement(By.className("search-button")).click();
+        driver.findElement(By.className("search-button")).click();
+        return new ItemPage(driver);
     }
 }

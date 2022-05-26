@@ -9,10 +9,19 @@ public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
         super(driver);
-        navBar = new NavigationBar<HomePage>(this);
+        navBar = new NavigationBar<HomePage>(this, driver);
     }
 
+    public HomePage setNavBarSearchText(String text) {
+        navBar.setSearchText(text);
+        return this;
+    }
 
+    // Search can return either a search results page, or a specific item if there
+    // was only 1 search result.
+    public ItemPage clickNavBarSearchBtn() {
+        return navBar.clickSearchBtn();
+    }
 
 
 }
