@@ -18,4 +18,18 @@ public class ItemPage extends BasePage {
     public String getItemName() {
         return driver.findElement(By.className("js-product-name")).getText();
     }
+
+    public String getItemQty() {
+        return driver.findElement(By.className("ui-spinner-input")).getAttribute("value");
+    }
+
+    public ItemPage clickIncrementItemQty() {
+        driver.findElement(By.className("ui-spinner-up")).click();
+        return this;
+    }
+
+    public ItemPage clickDecrementItemQty() {
+        driver.findElement(By.className("ui-spinner-down")).click();
+        return this;
+    }
 }
