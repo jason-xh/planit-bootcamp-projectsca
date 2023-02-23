@@ -1,0 +1,9 @@
+/home/jxiao/planit/planit-bootcamp-projectsca/src/test/java/com/planit/sca/model/pages/ItemPage.java
+/home/jxiao/planit/planit-bootcamp-projectsca/src/test/java/com/planit/sca/tests/BaseTestSuite.java
+/home/jxiao/planit/planit-bootcamp-projectsca/src/test/java/com/planit/sca/model/pages/SearchResultsPage.java
+/home/jxiao/planit/planit-bootcamp-projectsca/src/test/java/com/planit/sca/model/components/NavigationBar.java
+/home/jxiao/planit/planit-bootcamp-projectsca/src/test/java/com/planit/sca/model/pages/CartPage.java
+/home/jxiao/planit/planit-bootcamp-projectsca/src/test/java/com/planit/sca/model/pages/HomePage.java
+/home/jxiao/planit/planit-bootcamp-projectsca/src/test/java/com/planit/sca/tests/SearchTests.java
+/home/jxiao/planit/planit-bootcamp-projectsca/src/test/java/com/planit/sca/tests/CartTests.java
+/home/jxiao/planit/planit-bootcamp-projectsca/src/test/java/com/planit/sca/model/pages/BasePage.java

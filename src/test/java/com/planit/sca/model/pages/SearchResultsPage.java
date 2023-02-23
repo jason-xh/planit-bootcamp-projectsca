@@ -15,7 +15,7 @@ public class SearchResultsPage extends BasePage {
 
     public int getNumSearchItems() {
         // debugging print
-        //System.out.println(driver.findElements(By.className("product-tile")).toString());
+        // System.out.println(driver.findElements(By.className("product-tile")).toString());
 
         // I believe this is a decent selector but it's returning more values than
         //     expected
