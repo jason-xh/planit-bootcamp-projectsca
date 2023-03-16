@@ -10,10 +10,17 @@ Send keys to text field:
 
         #nav-contact // id
         .btn-contact // class
-        table // tag <table />
-        table#nav-contact.btn-contact a
+        div // tag <table />  <div />   <a />
+        =div // also tag <div />
+        > // DIRECT child
+        .navigation-desktop input.expand-visible // whitespace means to select from all children not just direct children
+        table#nav-contact.btn-contact // linking with no spaces means it's selecting the SAME element
+        // the line above is saying, select the table with class btn-contact and ID nav-contact
+        // e.g. to select the below input field
+<input class="expand-visible" name="q" size="20" type="text">
+var element = driver.findElement(By.cssSelector("input.expand-visible")
 
-        // jquery
+        // jquery in console
         $(".btn-contact")
         $$(".btn-contact") // can tell you how many there are
         
