@@ -26,7 +26,10 @@ var element = driver.findElement(By.cssSelector("input.expand-visible")
         
         */
 ```
-
+XPath selector notes
+```javascript
+       double slash to denote start of xpath //
+```
 TCK142A
 WR7DCX+
 
