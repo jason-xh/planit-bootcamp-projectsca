@@ -29,6 +29,13 @@ var element = driver.findElement(By.cssSelector("input.expand-visible")
 XPath selector notes
 ```javascript
        double slash to denote start of xpath //
+       text //a[text()="Ask Question"]
+       text //a[.="Ask Question"]
+       tags //div[@id='footerlinks-2']
+       contains //a[contains(@class,"lvl2link")][.="Life & Recover Cover"]
+       ancestor //h4[.='" + extrasCover + "']/ancestor::div[contains(@class,"item slide")]//a[.='Select']
+       h3[.="LIFE PROTECT INSURANCE"]/ancestor::div[contains(@class,"lt1_filter_slide ")]//span[.="Get a quote"]"
+
 ```
 TCK142A
 WR7DCX+
