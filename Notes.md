@@ -35,6 +35,7 @@ XPath selector notes
        contains //a[contains(@class,"lvl2link")][.="Life & Recover Cover"]
        ancestor //h4[.='" + extrasCover + "']/ancestor::div[contains(@class,"item slide")]//a[.='Select']
        h3[.="LIFE PROTECT INSURANCE"]/ancestor::div[contains(@class,"lt1_filter_slide ")]//span[.="Get a quote"]"
+       [not(@disabled)]
 
 ```
 TCK142A
