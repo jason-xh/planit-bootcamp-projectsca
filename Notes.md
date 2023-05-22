@@ -13,6 +13,7 @@ Send keys to text field:
         div // tag <table />  <div />   <a />
         =div // also tag <div />
         > // DIRECT child
+        [attribute='value'] // <input attribute='value'/>
         .navigation-desktop input.expand-visible // whitespace means to select from all children not just direct children
         table#nav-contact.btn-contact // linking with no spaces means it's selecting the SAME element
         // the line above is saying, select the table with class btn-contact and ID nav-contact
