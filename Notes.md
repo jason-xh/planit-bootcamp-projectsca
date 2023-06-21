@@ -36,6 +36,8 @@ XPath selector notes
        contains //a[contains(@class,"lvl2link")][.="Life & Recover Cover"]
        ancestor //h4[.='" + extrasCover + "']/ancestor::div[contains(@class,"item slide")]//a[.='Select']
        h3[.="LIFE PROTECT INSURANCE"]/ancestor::div[contains(@class,"lt1_filter_slide ")]//span[.="Get a quote"]"
+        String TEXT_ExtrasLimits_LimitValue = "//div[@class='info']//span[contains(@class,'heading')][.='%s']/ancestor::div[@class='info']/following-sibling::div[@class='progress-container']//p[not(contains(@class,'helper-txt'))]";
+
        [not(@disabled)]
 
 ```
