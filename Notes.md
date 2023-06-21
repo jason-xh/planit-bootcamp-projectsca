@@ -20,6 +20,7 @@ Send keys to text field:
         // e.g. to select the below input field
 <input class="expand-visible" name="q" size="20" type="text">
 var element = driver.findElement(By.cssSelector("input.expand-visible")
+NEGATION: div.progress-container p:not(.helper-txt)
 
         // jquery in console
         $(".btn-contact")
